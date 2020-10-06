@@ -21,7 +21,7 @@ g + geom_bar(stat="identity", width = 0.5, fill="tomato2") +
   theme(axis.text.x =element_text(angle = 65, vjust = 0.6))
   `
 ## Flip
-last_plot() + coord_flip()
+`last_plot() + coord_flip()`
 
 ## Music Observation
 - Bar and circle represents different instruments.
