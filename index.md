@@ -1,14 +1,41 @@
 ## Welcome to Leo Lai's GitHub Pages
+## This page is for EPPS data Visualization class at University of Texas at Dallas.
+[Proposal Powerpoint]{https://prezi.com/w-o49w3eybhg/edit/#8}
 
-You can use the [editor on GitHub](https://github.com/leolai07/datavisualization/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+## Bar chart 
+a <- c('Texas', 'New York', 'LA', 'Los Vegas')
+b <- c('2900', '839.9', '399', '64.46' )
+c <- c('820', '790', '880', '700')
+df <- data.frame(a, b, c)
+df
+names(df) <- c('State', 'population', 'cases')
+df
+library(ggplot2)
+theme_set(theme_classic())
+g <- ggplot(df, aes(State, population))
+g + geom_bar(stat="identity", width = 0.5, fill="tomato2") +
+  labs(title = "bar chart",
+       subtitle = "Domestic Violence over states",
+       caption = "Source= Nation Domestic violence database") +
+  theme(axis.text.x =element_text(angle = 65, vjust = 0.6))
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Flip
+last_plot() + coord_flip()
+
+## Music Observation
+- Bar and circle represents different instruments.
+- each angle has a pause on the line movement.
+- the smaller circle has less pause on the angle
+- bars and circles can make a really nice combinne.
+- nice flow.
+- smaller circle has a faster pitch.
+- red has a sharper pitch.
+- purple has a lower pitch.
+- sharper the angle, faster it turns.
+- smaller cubes, pitch turns faster.
 
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/leolai07/datavisualization/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
 ### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+If you have any questions or comments, please email me @ 935830097@qq.com
