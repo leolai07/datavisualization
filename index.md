@@ -1,6 +1,6 @@
 ## Welcome to Leo Lai's GitHub Pages
 ## This page is for EPPS data Visualization class at University of Texas at Dallas.
-[Proposal Powerpoint]{https://prezi.com/w-o49w3eybhg/edit/#8}
+[Proposal Powerpoint](https://prezi.com/w-o49w3eybhg/edit/#8)
 
 ## Bar chart 
 a <- c('Texas', 'New York', 'LA', 'Los Vegas')
